@@ -1,0 +1,36 @@
+#album-view img{
+    border: 1px solid slategray;
+    margin: 5px ;
+    padding: 5px;
+    height: 150px;
+}
+
+
+#modal-view{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;/*100% del grado de vision*/
+    width: 100vw;/*100% del ancho de vision*/
+
+    background-color: rgba(0,0,0,0.9);/*cantidad de valores en rojo,verde,azul y opacidad*/
+    z-index: 2;/*en que capa se encuentra la imagen*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modal-wiew img{
+    max-width: 100%;/*maximo ancho de la imagen*/
+    max-height: 100%;/*maximo alto de la imagen*/
+}
+
+#modal-view.hidden{
+    display: none;/*no se muestra la imagen*/
+}
+
+.no-scroll{
+    overflow: hidden;/*no se puede desplazar*/
+}
